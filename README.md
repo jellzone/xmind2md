@@ -1,10 +1,3 @@
-下面是一份可直接放到 GitHub 的 **README.md**，外加 **LICENSE(MIT)** 和建议的 **.gitignore**。你把仓库建好后，把我给你的脚本 `xmind2md.py` 放到根目录，连同这些文档一起提交即可。
-
----
-
-## 📄 README.md
-
-````markdown
 # xmind2md · XMind → Markdown 转换器
 
 将 `.xmind` 思维导图一键转换为结构清晰的 Markdown 大纲。  
