@@ -1,0 +1,24 @@
+name: Question / 使用咨询
+description: Ask about installation, conversion or the documentation.
+title: "question: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        中文或英文都可以。请先阅读 [README](https://github.com/jellzone/xmind2md/blob/main/README.md) 和 [贡献指南](https://github.com/jellzone/xmind2md/blob/main/CONTRIBUTING.md)。
+        请勿粘贴私密数据；安全问题按 [SECURITY.md](https://github.com/jellzone/xmind2md/blob/main/SECURITY.md) 报告。
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question / 问题
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / 背景
+      description: What did you try? Include Python/OS/XMind versions when relevant.
+  - type: textarea
+    id: documentation
+    attributes:
+      label: Documentation checked / 已查阅的文档

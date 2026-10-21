@@ -1,0 +1,37 @@
+name: Feature request / 功能建议
+description: Suggest a capability or output improvement.
+title: "feat: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        中文或英文都可以。请使用合成数据说明需求，不要上传私密思维导图。
+  - type: textarea
+    id: problem
+    attributes:
+      label: Use case / 使用场景
+      description: What are you trying to do, and what is missing today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior / 期望行为
+      description: Include an example of input and expected Markdown when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility / 兼容性
+      description: Does this affect JSON, XML, CLI options, the Python API or existing output?
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives / 当前替代方案
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution / 参与实现
+      options:
+        - label: I would be willing to submit a pull request.
