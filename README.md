@@ -25,10 +25,10 @@
 
 方式一（直接使用脚本）：
 ```bash
-git clone https://github.com/<your-org-or-name>/xmind2md.git
+git clone https://github.com/jellzone/xmind2md.git
 cd xmind2md
 python xmind2md.py -h
-````
+```
 
 方式二（作为模块导入，便于二次开发）：
 
@@ -149,75 +149,18 @@ usage: xmind2md.py input.xmind -o output.md [--max-depth N] [--no-notes] [--no-l
 
 ## 参与贡献
 
-欢迎 PR / Issue：
+欢迎用中文或英文提交 [Issue](https://github.com/jellzone/xmind2md/issues/new/choose) 和 Pull Request。
 
-* 代码风格尽量保持无第三方依赖、结构清晰
-* 新增能力务必附带最小可复现样例
-* 大型功能请先开 Issue 讨论方向
+请先阅读 [贡献指南](CONTRIBUTING.md)：包含开发环境、验证方法、最小复现样例和 DCO 提交签署要求。参与社区请遵守 [行为准则](CODE_OF_CONDUCT.md)。
+
+安全漏洞请按 [安全政策](SECURITY.md) 联系维护者，勿在公开 Issue 中披露细节。
 
 ---
 
 ## 许可证
 
-本项目使用 **MIT License**，详见 [LICENSE](./LICENSE)。
+本项目使用 **MIT License**，完整条款见 [LICENSE](LICENSE)。
 
-````
+Copyright (c) 2025 jellzone and contributors.
 
----
-
-## 🧾 LICENSE (MIT)
-
-```text
-MIT License
-
-Copyright (c) 2025 <Your Name>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-````
-
-> 把 `<Your Name>` 换成你的名字或公司名。
-
----
-
-## 🌫️ .gitignore（建议）
-
-```gitignore
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Distribution / packaging
-build/
-dist/
-*.egg-info/
-
-# macOS / Windows
-.DS_Store
-Thumbs.db
-
-# Editors
-.vscode/
-.idea/
-
-# Test artifacts
-*.xmind
-*.md
-!README.md
-```
+XMind 名称归其各自权利人所有；本项目是独立的转换工具，与 XMind 官方无隶属关系。

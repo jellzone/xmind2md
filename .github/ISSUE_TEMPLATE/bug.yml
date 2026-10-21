@@ -1,0 +1,54 @@
+name: Bug report / 问题反馈
+description: Report a conversion or usage problem with a minimal reproduction.
+title: "bug: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        中文或英文都可以。安全漏洞请按 [SECURITY.md](https://github.com/jellzone/xmind2md/blob/main/SECURITY.md) 报告。
+        请勿上传凭据、真实客户数据或未经授权的思维导图；使用最小合成样例。
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior / 预期与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce / 复现步骤
+      description: Include the exact command, minimal synthetic input and expected Markdown.
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Input format / 输入格式
+      options:
+        - XMind 2020/Zen (content.json)
+        - XMind 8 (content.xml)
+        - Unknown / 不确定
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment / 环境
+      description: Python version, operating system, XMind version and repository commit.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Relevant output / 错误输出
+      description: Redacted traceback or Markdown excerpt, if available.
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting / 提交前
+      options:
+        - label: I checked the README and existing issues.
+          required: true
+        - label: This report contains no security vulnerability details or private data.
+          required: true
